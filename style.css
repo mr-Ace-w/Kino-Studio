@@ -1,0 +1,66 @@
+body{
+    background-image: url(background222.jpg);
+    font-family: Arial;
+}
+
+
+
+h1{
+color: aliceblue;
+}
+h2{
+color: aliceblue;
+}
+h3{
+color: aliceblue;
+}
+h5{
+color: aliceblue;
+}
+p{
+color: aliceblue;
+}
+
+
+
+header {
+    padding: 6px;
+    background: #141414;
+img{
+    margin-top: 20px;
+}
+h1{
+    margin-top: -50px;
+}    
+}
+
+
+.kino1{   
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 70px;
+
+
+.forsazh{
+    background: #141414;
+    padding: 20px;
+    text-align: left;
+}
+.WarDogs{
+    background: #141414;
+    padding: 20px;
+    text-align: left;
+}
+.Ted{
+    background: #141414;
+    padding: 20px;
+    text-align: left;
+
+}
+
+
+}
+
+
+
