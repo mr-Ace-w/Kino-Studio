@@ -1,39 +1,86 @@
 body{
     background-image: url(background222.jpg);
     font-family: Arial;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h5, p{
     color: aliceblue;
+    margin: 0.5em 0;
 }
 
 header {
     padding: 1.5%;
     background: #141414;
+    text-align: center;
+}
 
-h1{
-      margin-top: -3%;
-}    
+header img{
+    margin-top: 2%;
+    width: 8%;
+    height: auto;
 }
 
 .kino1{   
     display: flex;
     justify-content: center;
     gap: 2%;
-    padding: 10%;
-
+    padding: 5%;
+    flex-wrap: wrap; /* блоки переносяться на новий рядок */
 }
 
 .forsazh, .WarDogs, .Ted{
     background: #141414;
     padding: 2%;
     text-align: left;
-    width: 35%; /* кожен блок займає приблизно третину контейнера */
+    width: 30%;
+    box-sizing: border-box;
 }
 
-iframe {
+img{
     width: 100%;
     height: auto;
-    aspect-ratio: 16/9; /* щоб пропорції відео залишалися правильні */
 }
+
+.video-container{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Media Queries для мобільних --- */
+@media screen and (max-width: 768px){
+    .kino1{
+        padding: 3%;
+        gap: 3%;
+    }
+
+    .forsazh, .WarDogs, .Ted{
+        width: 90%; /* блоки займають майже весь екран */
+        padding: 4%;
+    }
+
+    header img{
+        width: 20%;
+    }
+
+    h1{
+        font-size: 1.5em;
+      h2{
+        font-size: 1.2em;
+        }
+     h3{
+        font-size: 1em;
+        }
+
+     h5, p{
+        font-size: 0.9em;
+          }
+      }
+
 
