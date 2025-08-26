@@ -5,17 +5,20 @@ body{
     padding: 0;
 }
 
-h1, h2, h3, h5, p{
+h1, h2, h3, h5,p,button{
     color: aliceblue;
     
 }
 
+
+
 header {
     padding: 1%;
     background: #141414;
-h1{
-    margin-top: -3%;
+ 
 }
+header h1{
+    margin-top: -3%;
 }
 
 
@@ -32,22 +35,32 @@ footer{
     justify-content: center;
     gap: 1%;
     flex-wrap: wrap; /* блоки переносяться на новий рядок */
-
-img{
+}
+.kino1 img{
     height: 40%;
     width: 60%;
-}   
-
 }
 
 .forsazh, .WarDogs, .Ted{
     background: #292929;
     padding: 1.2%;
-    text-align: left;
     box-sizing: border-box;
     border-radius: 1%;
-    border: 1px solid #000;
-    
+    border: 2px solid #000;
+p{
+    text-align: left;
+}
+button{
+    color: rgb(255, 255, 255);
+    background-color: #292929;
+    border-radius: 10px;
+    height: 10%;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 }
 
 
@@ -61,6 +74,7 @@ img{
     .forsazh, .WarDogs, .Ted{
         width: 80%; /* блоки займають майже весь екран */
         padding: 1%;
+        flex-wrap: wrap;
     }
 
     h1{
@@ -72,7 +86,7 @@ img{
         font-size: 1em;
         }
 
-     h5, p{
+     h5, p, button{
         font-size: 0.9em;
           }
       }
