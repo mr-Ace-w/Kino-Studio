@@ -7,53 +7,51 @@ body{
 
 h1, h2, h3, h5, p{
     color: aliceblue;
-    margin: 0.5em 0;
+    
 }
 
 header {
-    padding: 1.5%;
+    padding: 1%;
     background: #141414;
-    text-align: center;
+h1{
+    margin-top: -3%;
+}
 }
 
-header img{
-    margin-top: 2%;
-    width: 8%;
-    height: auto;
+
+footer{
+    background-color:#141414 ;
+     padding: 1%;
+     text-align: center;
 }
+
+
 
 .kino1{   
     display: flex;
     justify-content: center;
-    gap: 2%;
-    padding: 5%;
+    gap: 1%;
     flex-wrap: wrap; /* блоки переносяться на новий рядок */
+
+img{
+    height: 40%;
+    width: 60%;
+}   
+
 }
 
 .forsazh, .WarDogs, .Ted{
-    background: #141414;
-    padding: 2%;
+    background: #292929;
+    padding: 1.2%;
     text-align: left;
-    width: 30%;
     box-sizing: border-box;
+    border-radius: 1%;
+    border: 1px solid #000;
+    
 }
 
-img{
-    width: 100%;
-    height: auto;
-}
 
-.video-container{
-    width: 100%;
-    aspect-ratio: 16/9;
-}
 
-iframe{
-    width: 100%;
-    height: 100%;
-}
-
-/* --- Media Queries для мобільних --- */
 @media screen and (max-width: 768px){
     .kino1{
         padding: 3%;
@@ -61,12 +59,8 @@ iframe{
     }
 
     .forsazh, .WarDogs, .Ted{
-        width: 90%; /* блоки займають майже весь екран */
-        padding: 4%;
-    }
-
-    header img{
-        width: 20%;
+        width: 80%; /* блоки займають майже весь екран */
+        padding: 1%;
     }
 
     h1{
@@ -82,6 +76,4 @@ iframe{
         font-size: 0.9em;
           }
       }
-
 }
-
