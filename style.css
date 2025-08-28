@@ -1,0 +1,103 @@
+body{
+    background-image: url(background222.jpg);
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h5,p,button{
+    color: aliceblue;
+    
+}
+
+
+
+header {
+    padding: 1%;
+    background: #141414;
+ 
+}
+header h1{
+    margin-top: -3%;
+}
+
+
+footer{
+    background-color:#141414 ;
+     padding: 1%;
+     text-align: center;
+}
+
+
+
+.kino1{   
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    flex-wrap: wrap; /* блоки переносяться на новий рядок */
+}
+.kino1 img{
+    height: 40%;
+    width: 60%;
+}
+.Pirates img{
+    height: 40%;
+    width: 50%;
+}
+.Ted img{
+       height: 40%;
+       width: 70%;
+}
+
+.forsazh, .WarDogs, .Ted, .Transformers, .Pirates , .BigMomma, .FightClub, .Taxi, .RealSteel, .Venom{
+    background: #292929;
+    padding: 1.2%;
+    box-sizing: border-box;
+    border-radius: 1%;
+    border: 2px solid #000;
+    max-width: 19%;
+    max-height:15% ;
+p{
+    text-align: left;
+}
+button{
+    color: rgb(255, 255, 255);
+    background-color: #292929;
+    border-radius: 10px;
+    height: 10%;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+}
+
+
+
+@media screen and (max-width: 768px){
+    .kino1{
+        padding: 3%;
+        gap: 3%;
+    }
+
+    .forsazh, .WarDogs, .Ted, .Transformers, .Pirates, .BigMomma, .FightClub, .Taxi, .RealSteel, .Venom{
+        width: 80%; /* блоки займають майже весь екран */
+        padding: 1%;
+        flex-wrap: wrap;
+    }
+
+    h1{
+        font-size: 1.5em;
+      h2{
+        font-size: 1.2em;
+        }
+     h3{
+        font-size: 1em;
+        }
+
+     h5, p, button{
+        font-size: 0.9em;
+          }
+      }
+}
