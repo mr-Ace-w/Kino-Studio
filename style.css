@@ -1,0 +1,120 @@
+body{
+    background-image: url(background222.jpg);
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h5,p{
+    color: aliceblue;
+    
+}
+
+
+header {
+    padding: 1%;
+    background: #141414;
+ 
+}
+header h1{
+    margin-top: -3%;
+}
+
+
+footer{
+    background-color:#141414 ;
+     padding: 1%;
+     text-align: center;
+}
+footer p{
+    text-align: center;
+}
+
+
+.kino1{   
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    flex-wrap: wrap; /* блоки переносяться на новий рядок */
+    
+}
+.kino1 img{
+    height: 100%;
+    width: 100%;
+}
+.kino1 button{  
+    color: rgb(0, 0, 0);
+    background-color: #292929;
+    border-radius: 5px;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-top: 10%;
+}
+
+
+.forsazh, .WarDogs, .Ted, .Transformers, .Pirates , .BigMomma, .FightClub, .Taxi, .RealSteel, .Venom{
+    background: #292929;
+    padding: 1.2%;
+    border-radius: 1%;
+    border: 2px solid #000;
+    flex: 1 1 22%;       /* базово 22% ширини */
+    min-width: 250px;    /* не стискати нижче */
+    max-width: 320px;    /* не розширювати більше */
+    min-height: 400px;   /* гарантована мінімальна висота */
+    max-height: 600px;   /* вище не виросте */
+    overflow: hidden;    /* все, що не влазить — ховається */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .kino1 {
+        width: 95%;
+        padding: 2%;
+        gap: 10px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .forsazh, .WarDogs, .Ted, .Transformers, .Pirates, .BigMomma, .FightClub, .Taxi, .RealSteel, .Venom {
+        width: 45%; /* по 2 в ряд на телефоні */
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    header{
+    width: 101%;
+    padding: 1%;
+    background: #141414;
+
+    }
+
+    header img{
+        width: 19%;
+        height: auto;
+        margin-left:auto ;
+        margin-top: 0%;
+    }
+    img {
+        width: 100%;
+        height: auto; /* щоб не розтягувалось */
+        margin: auto;
+    }
+
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.2em; }
+    h3 { font-size: 1em; }
+
+
+}
